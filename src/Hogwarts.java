@@ -1,6 +1,4 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -44,6 +42,7 @@ public class Hogwarts {
         Punkt = punkt;
     }
 
+    //a)
     public static void readFromFile() {
         try {
             FileReader fr = new FileReader("punkte.txt");
@@ -61,6 +60,7 @@ public class Hogwarts {
         }
     }
 
+    //b)
         public void filterByLetter() {
         //wir lesen von Tastatur eine Buchstabe
         Scanner input = new Scanner(System.in);
@@ -72,6 +72,8 @@ public class Hogwarts {
                 System.out.println(s); //zeigt alle Name an
     }
 
+
+    //c)
 //    public void sortAlphabetic() {
 //        List<String> gryffindorStudent = new ArrayList<>(); //eine neue Liste um die Studenten aus Gryffindor memorieren
 //        for (StudentList s: StudentList)
@@ -81,6 +83,20 @@ public class Hogwarts {
 //        for (String s: gryffindorStudent)
 //            System.out.println(s + "\n"); //zeigen alle Namen an
 //    }
+
+    //d)
+    public void writeInAFile() {
+        try {
+            FileWriter fw = new FileWriter("ergebnis.txt");
+            PrintWriter pw = new PrintWriter(fw);
+
+            pw.close();
+            fw.close();
+        }
+        catch (IOException e) {
+                e.printStackTrace();
+        }
+    }
 
 }
 
