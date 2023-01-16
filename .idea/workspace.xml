@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b934009-c2b9-4511-b8e2-fdcc910d2ac5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Hogwarts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/House.java" afterDir="false" />
+    <list default="true" id="2b934009-c2b9-4511-b8e2-fdcc910d2ac5" name="Changes" comment="b) complet">
+      <change afterPath="$PROJECT_DIR$/src/punkte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Hogwarts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hogwarts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,8 +53,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673701971940</updated>
-      <workItem from="1673877865512" duration="1826000" />
+      <workItem from="1673877865512" duration="2477000" />
     </task>
+    <task id="LOCAL-00001" summary="b) complet">
+      <created>1673879957123</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673879957123</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -70,5 +78,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="b) complet" />
+    <option name="LAST_COMMIT_MESSAGE" value="b) complet" />
   </component>
 </project>

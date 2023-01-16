@@ -44,34 +44,43 @@ public class Hogwarts {
         Punkt = punkt;
     }
 
-    public void readFromFile() {
-    //lesen das Text Datei
-    try {
-        FileReader fr = new FileReader("punkte.txt");
-        BufferedReader br = new BufferedReader(fr);
-        String line;
-        while ((line = br.readLine()) != null) {
-            String[] fields = line.split("&");
-            String house = fields[0];
-            int points = Integer.parseInt(fields[1]);
+    public static void readFromFile() {
+        try {
+            FileReader fr = new FileReader("punkte.txt");
+            BufferedReader br = new BufferedReader(fr);
+
+            String line;
+            while ((line = br.readLine()) != null) {
+                String[] fields = line.split("&");
+                String house = fields[0];
+            }
+            br.close();
+            fr.close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
-    catch(IOException e) {
 
-        }
-    }
-
-    public void filterByLetter() {
+        public void filterByLetter() {
+        //wir lesen von Tastatur eine Buchstabe
         Scanner input = new Scanner(System.in);
         System.out.println("Write the first letter: ");
         String letter = input.nextLine();
 
         for (String s: StudentList)
-            if (s.startsWith(letter))
-                System.out.println(s);
+            if (s.startsWith(letter)) //suchen alle Namen die mit die "letter" beginnen
+                System.out.println(s); //zeigt alle Name an
     }
 
-
+//    public void sortAlphabetic() {
+//        List<String> gryffindorStudent = new ArrayList<>(); //eine neue Liste um die Studenten aus Gryffindor memorieren
+//        for (StudentList s: StudentList)
+//            if (s.getHouse().equals("Gryffindor")) //suchen ob das Haus Gryffindor ist
+//                gryffindorStudent.add(s.getName());
+//        Collections.sort(gryffindorStudent); //sortieren die Name alphabetisch
+//        for (String s: gryffindorStudent)
+//            System.out.println(s + "\n"); //zeigen alle Namen an
+//    }
 
 }
 
